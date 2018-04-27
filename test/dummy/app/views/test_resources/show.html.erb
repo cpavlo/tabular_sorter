@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_resource.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @test_resource.age %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @test_resource.kind %>
+</p>
+
+<%= link_to 'Edit', edit_test_resource_path(@test_resource) %> |
+<%= link_to 'Back', test_resources_path %>

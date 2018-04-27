@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Test Resources</h1>
+
+<table class="sortable_table">
+  <thead>
+    <tr>
+      <th class="sort" data="test_resources.id">Id</th>
+      <th class="sort" data="test_resources.name">Name</th>
+      <th class="sort" data="test_resources.age">Age</th>
+      <th class="sort" data="test_resources.kind">Kind</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_resources.each do |test_resource| %>
+      <tr>
+        <td><%= test_resource.id %></td>
+        <td><%= test_resource.name %></td>
+        <td><%= test_resource.age %></td>
+        <td><%= test_resource.kind %></td>
+        <td><%= link_to 'Show', test_resource %></td>
+        <td><%= link_to 'Edit', edit_test_resource_path(test_resource) %></td>
+        <td><%= link_to 'Destroy', test_resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test Resource', new_test_resource_path %>

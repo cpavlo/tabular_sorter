@@ -1,0 +1,9 @@
+one:
+  name: one
+  age: 1
+  kind: one
+
+two:
+  name: two
+  age: 2
+  kind: two
